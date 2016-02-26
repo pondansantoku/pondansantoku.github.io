@@ -1,5 +1,3 @@
-
-
 marked.setOptions({
     gfm: true,
     tables: true,
@@ -8,7 +6,7 @@ marked.setOptions({
     sanitize: true,
     smartLists: true,
     smartypants: false,
-    langPrefix: '',
+    langPrefix: ''
     // highlight: function(code, lang) {
     //     // hogehoge
     //     return code;
@@ -21,7 +19,3 @@ pokapoka.replaceMarkdown = function(){
     var markedHtml = marked(innerDom.innerHTML);
     innerDom.innerHTML = markedHtml;
 }
-
-document.addEventListener("DOMContentLoaded", function(event) {
-    pokapoka.replaceMarkdown();
-});
