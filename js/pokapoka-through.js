@@ -1,3 +1,5 @@
+
+
 marked.setOptions({
     gfm: true,
     tables: true,
@@ -13,8 +15,13 @@ marked.setOptions({
     // }
 });
 
-document.addEventListener("DOMContentLoaded", function(event) {
+pokapoka = {};
+pokapoka.replaceMarkdown = function(){
     var innerDom = $('.post-body.entry-content');
     var markedHtml = marked(innerDom.innerHTML);
     innerDom.innerHTML = markedHtml;
-  });
+}
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    pokapoka.replaceMarkdown();
+});
