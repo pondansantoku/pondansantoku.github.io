@@ -1,0 +1,12 @@
+body {
+    font-family: consolas, "メイリオ" !important;
+}
+.post-title {
+    font-weight: bold !important;
+    font-size: 27px !important;
+}
+h1.title {
+    font-family: consolas;
+    font-weight: bold;
+    font-size: 74px;
+}
