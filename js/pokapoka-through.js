@@ -1,3 +1,5 @@
+jQuery.noConflict();
+
 marked.setOptions({
     gfm: true,
     tables: true,
@@ -15,7 +17,7 @@ marked.setOptions({
 
 pokapoka = {};
 pokapoka.replaceMarkdown = function(){
-    var innerDom = $('.post-body.entry-content');
+    var innerDom = jQuery('.post-body.entry-content');
     var markedHtml = marked(innerDom.innerHTML);
     innerDom.innerHTML = markedHtml;
 }
