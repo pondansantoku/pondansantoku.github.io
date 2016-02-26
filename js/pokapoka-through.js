@@ -17,5 +17,5 @@ pokapoka = {};
 pokapoka.replaceMarkdown = function(){
     var innerDom = $('.post-body.entry-content');
     var markedHtml = marked(innerDom.text());
-    innerDom.innerHTML = markedHtml;
+    innerDom.html(markedHtml);
 }
