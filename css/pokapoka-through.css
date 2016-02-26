@@ -10,3 +10,7 @@ h1.title {
     font-weight: bold;
     font-size: 74px;
 }
+
+code {
+    font-family: consolas !important;
+}
